@@ -1,0 +1,178 @@
+{
+  "version": "v2.1-blueprint-aligned",
+  "anillos_transversales": [
+    "BI & Analytics (Informa)",
+    "Plataforma de Interconexión de IA (Razona, Propone y Orquesta bajo gobierno L0-L4)",
+    "Operaciones y Sistemas Core (Ejecuta)"
+  ],
+  "reglas_arquitectura_psa": {
+    "seccion_5_2_infraestructura": [
+      "Cloud Run (Cómputo Serverless en us-west1 con escala a cero --min-instances=0)",
+      "Vertex AI Agent Engine (Runtime gestionado de Sesiones y Memory Bank en us-west1)",
+      "Artifact Registry y Cloud Storage (Imágenes de contenedor y artefactos)",
+      "BigQuery y Vertex AI Search (Productos de Datos y Conocimiento)"
+    ],
+    "seccion_5_4_redes_y_gateway": [
+      "Cloud Load Balancing + Cloud Armor (WAF y protección perimetral)",
+      "Fase 1 Ágil (Sin costo base de Apigee): Cloud API Gateway + Cloud Run IAM OIDC (Autenticación máquina-a-máquina)",
+      "Evolución Empresarial a Escala: Enterprise API & MCP Gateway (Apigee X o Gateway Corporativo Existente)",
+      "Balanceadores F5 / Proxies reversos",
+      "Cloud VPN / Dedicated Interconnect / Private Service Connect"
+    ]
+  },
+  "dominios": {
+    "Mercaderias": {
+      "exposicion_inicial": "Lectura + propuesta (L0-L1)",
+      "capacidades_n2": [
+        {
+          "nombre": "Planogramación y macroespacios",
+          "capacidades_n3": [
+            "Asignación de góndolas y exhibidores en piso de venta",
+            "Configuración de puertas de cuarto frío",
+            "Detección de candidatos a expulsión y simulación de espacio"
+          ]
+        },
+        {
+          "nombre": "Gestión de variedad, precios y promociones",
+          "capacidades_n3": [
+            "Surtido por segmento maestro (Barrio Competido, Hogar, Comida)",
+            "Simulación de escenarios de precio y promoción"
+          ]
+        }
+      ]
+    },
+    "Cadena de Suministro": {
+      "exposicion_inicial": "Lectura + ejecución acotada (L0-L3)",
+      "capacidades_n2": [
+        {
+          "nombre": "Abasto",
+          "capacidades_n3": [
+            "Detección y diagnóstico de excepciones de abasto",
+            "Surtido inicial para apertura de tienda",
+            "Simulación de alternativas de reabastecimiento"
+          ]
+        },
+        {
+          "nombre": "Administración de CEDIS",
+          "capacidades_n3": [
+            "Preparación de pedidos (Picking & Packing)",
+            "Control de inventario en CEDIS"
+          ]
+        },
+        {
+          "nombre": "Distribución de mercancía y recepción en tienda",
+          "capacidades_n3": [
+            "Priorización de distribución y ruteo",
+            "Confirmación de recepción en tienda"
+          ]
+        }
+      ]
+    },
+    "Operaciones": {
+      "exposicion_inicial": "Lectura + escritura reversible (L0-L2)",
+      "capacidades_n2": [
+        {
+          "nombre": "Gestión de plaza y región",
+          "capacidades_n3": [
+            "Asistencia al jefe de plaza con contexto consolidado",
+            "Tablero consolidado de tiendas en región"
+          ]
+        },
+        {
+          "nombre": "Gestión de tienda y atención al cliente",
+          "capacidades_n3": [
+            "Checklist operativo de apertura",
+            "Diagnóstico operativo y respuesta a incidencias"
+          ]
+        },
+        {
+          "nombre": "Foodservice",
+          "capacidades_n3": [
+            "Habilitación de equipos de café y fast food",
+            "Control de merma operativa"
+          ]
+        }
+      ]
+    },
+    "Ventas": {
+      "exposicion_inicial": "Solo lectura (L0-L1)",
+      "capacidades_n2": [
+        {
+          "nombre": "Ejecución de venta, devoluciones y administración de efectivo",
+          "capacidades_n3": [
+            "Análisis de desviaciones de venta y efectivo",
+            "Preparación de aclaraciones de cobro en punto de venta",
+            "Diagnóstico de incidencias de terminal POS"
+          ]
+        }
+      ]
+    },
+    "B2C y canales digitales": {
+      "exposicion_inicial": "Lectura + escritura reversible (L0-L2)",
+      "capacidades_n2": [
+        {
+          "nombre": "eCommerce, lealtad, fast delivery y retail media",
+          "capacidades_n3": [
+            "Resolución de excepciones de pedido y entrega (Order & Fulfillment)",
+            "Personalización de ofertas y atención de casos de cliente"
+          ]
+        }
+      ]
+    },
+    "Servicios": {
+      "exposicion_inicial": "Lectura + propuesta con doble aprobación (L0-L4)",
+      "capacidades_n2": [
+        {
+          "nombre": "Recepción de pagos, corresponsalías y medios de pago",
+          "capacidades_n3": [
+            "Conciliación con terceros y corresponsales",
+            "Atención de disputas y diagnóstico de disponibilidad de servicio"
+          ]
+        }
+      ]
+    },
+    "Administracion y Finanzas": {
+      "exposicion_inicial": "Lectura + propuesta. Nunca autónomo (L4 — Propose & Approve)",
+      "capacidades_n2": [
+        {
+          "nombre": "Contabilidad, tesorería y cuentas por cobrar/pagar",
+          "capacidades_n3": [
+            "Conciliación asistida y preparación de ajustes con evidencia",
+            "Calidad de datos maestros y control presupuestal CAPEX/OPEX"
+          ]
+        }
+      ]
+    },
+    "Recursos Humanos": {
+      "exposicion_inicial": "Lectura sensible + escritura reversible (L1-L2)",
+      "capacidades_n2": [
+        {
+          "nombre": "Planeación, reclutamiento y gestión laboral",
+          "capacidades_n3": [
+            "Asignación de plantilla para nueva tienda",
+            "Triage de casos laborales y consulta asistida de políticas"
+          ]
+        }
+      ]
+    },
+    "Expansion": {
+      "exposicion_inicial": "Lectura + escritura reversible (L0-L2)",
+      "capacidades_n2": [
+        {
+          "nombre": "Apertura de tiendas",
+          "capacidades_n3": [
+            "Seguimiento del proyecto de apertura y detección de bloqueos",
+            "Consolidación de información de sitio, obra civil y proveedores"
+          ]
+        },
+        {
+          "nombre": "Gestión y conservación de inmuebles y abastecimiento",
+          "capacidades_n3": [
+            "Equipamiento de cuarto frío, mobiliario y señalética",
+            "Mantenimiento preventivo y correctivo"
+          ]
+        }
+      ]
+    }
+  }
+}
