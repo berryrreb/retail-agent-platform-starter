@@ -1,0 +1,48 @@
+{
+  "moneda": "MXN",
+  "version": "2026.10",
+  "roles": {
+    "arquitecto_soluciones": {
+      "nombre": "Arquitecto de Soluciones Empresariales",
+      "area": "Arquitectura Empresarial",
+      "negocio": "TI Corporativo",
+      "tarifa_base_mensual": 96000
+    },
+    "ai_engineer": {
+      "nombre": "AI / Agent Engineer (ADK & Vertex AI)",
+      "area": "Plataforma de Interconexión IA",
+      "negocio": "Plataforma Digital",
+      "tarifa_base_mensual": 89000
+    },
+    "backend_mcp_sr": {
+      "nombre": "Desarrollador Backend Sr (Servidores MCP & APIs)",
+      "area": "Ingeniería de Dominio",
+      "negocio": "Operaciones & Sistemas Core",
+      "tarifa_base_mensual": 78000
+    },
+    "ai_security_risk": {
+      "nombre": "Especialista AI Security, Guardrails & Risk",
+      "area": "Seguridad de la Información",
+      "negocio": "Gobierno y Riesgo",
+      "tarifa_base_mensual": 92000
+    },
+    "data_knowledge_steward": {
+      "nombre": "Data & Knowledge Steward (BigQuery / RAG)",
+      "area": "Datos y Analítica (BI & Analytics)",
+      "negocio": "Datos Corporativos",
+      "tarifa_base_mensual": 75000
+    },
+    "qa_agentops": {
+      "nombre": "Ingeniero QA, Evaluación Continua & AgentOps",
+      "area": "Calidad y SRE",
+      "negocio": "TI Corporativo",
+      "tarifa_base_mensual": 64000
+    },
+    "product_owner_dominio": {
+      "nombre": "Technical Product Owner (TPO) de Dominio",
+      "area": "Producto Digital",
+      "negocio": "Operaciones / Expansión",
+      "tarifa_base_mensual": 84000
+    }
+  }
+}

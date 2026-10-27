@@ -1,0 +1,23 @@
+[
+  {
+    "id": "apertura-pfernandez",
+    "titulo": "Caso 1: Orquestador de Apertura de Tienda (PFERNANDEZ - San Luis)",
+    "subtitulo": "Cruza Expansión, Cadena de Suministro, Mercaderías y Operaciones (/psa + /quote)",
+    "comando": "/psa y /quote",
+    "prompt": "Procesa esta transcripción de ideación y genera tanto el documento de arquitectura PSA (/psa) como la cotización del proyecto (/quote):\n\n[TRANSCRIPCIÓN DE REUNIÓN - PROYECTO ORQUESTADOR DE APERTURA DE TIENDAS]\nAsistentes: Mario A. Cervantes Huerta (Analista de Expansión, mario.cervantes@empresa-retail.com, tel 4448123456) y Vidal Manuel Macías Guzmán (AADC, vidal.macias@empresa-retail.com).\nResumen de la sesión:\nNecesitamos construir el Agente Orquestador de Apertura de Tiendas para acelerar aperturas como la tienda PFERNANDEZ en Ciudad Fernández, Plaza San Luis Potosí (segmento Barrio Competido, construcción TN desde 0, tráfico peatonal de 70 personas cada 15 min, piso de venta de 133.08 m2 y cuarto frío de 31.97 m2 con 15 puertas de 24 pulgadas).\nHoy el seguimiento entre dominios es manual: Expansión libera el layout y los 27 tramos de góndola, pero Cadena de Suministro y Mercaderías tardan en sincronizar el abasto inicial de los 15 exhibidores de piso de venta y los 10 muebles de Fast Food, mientras Operaciones valida el checklist de entrega.\nQueremos desplegar el agente en Cloud Run usando Google ADK, exponiendo las APIs REST existentes a través de Apigee como MCP Gateway y servidores MCP por dominio (Expansión, Cadena de Suministro y Operaciones) con trazabilidad en Cloud Trace y memoria en Vertex AI Agent Engine.\nPara la cotización (/quote), estimamos una duración de 6 meses con: 1 Arquitecto de Soluciones al 50%, 2 AI Engineers al 100%, 1 Desarrollador Backend Sr para servidores MCP al 100%, 1 Data & Knowledge Steward al 50%, más una bolsa única de $150,000 MXN para pruebas de seguridad y red teaming."
+  },
+  {
+    "id": "conciliacion-corresponsalias",
+    "titulo": "Caso 2: Conciliación Asistida de Servicios y Corresponsalías (Frontera L4)",
+    "subtitulo": "Patrón Propose & Approve entre Servicios y Administración y Finanzas",
+    "comando": "/psa y /quote",
+    "prompt": "Genera el PSA (/psa) y la cotización (/quote) para esta minuta:\n\n[MINUTA DE IDEACIÓN - AGENTE DE CONCILIACIÓN ASISTIDA DE CORRESPONSALÍAS Y PAGOS EN CAJA]\nContacto en sesión: Laura Méndez (laura.mendez@empresa-retail.com, cel 8187654321). Tarjeta de prueba reportada en ticket: 4532 0151 1283 9901.\nObjetivo: Automatizar la detección y explicación de diferencias de conciliación diaria entre corresponsalías bancarias / pagos en caja (dominio Servicios) y el ERP contable (dominio Administración y Finanzas).\nRegla crítica: Como toca ajustes contables y movimientos financieros (Nivel de riesgo L4), el agente NUNCA debe ejecutar el ajuste de forma autónoma. Debe operar bajo el patrón Propose & Approve: lee las transacciones vía MCP sobre Apigee, empata diferencias en BigQuery, redacta cualquier PAN con Cloud DLP y deja la póliza propuesta en una cola de doble aprobación humana.\nPara la cotización (/quote): proyectamos 5 meses con 1 Arquitecto de Soluciones al 50%, 1 AI Engineer al 100%, 1 Especialista AI Security & Risk al 100%, 1 Desarrollador Backend Sr al 100%, 1 Ingeniero QA al 50% y 1 Especialista SAP FI (rol aún no catalogado) al 50%, con un costo único de $95,000 MXN para certificación de guardrails en Model Armor."
+  },
+  {
+    "id": "ajuste-memoria-sesion",
+    "titulo": "Caso 3: Iteración en Sesión + Consolidación en Memory Bank",
+    "subtitulo": "Prueba cómo VertexAiSessionService y VertexAiMemoryBankService recuerdan contexto",
+    "comando": "Ajuste conversacional",
+    "prompt": "Sobre el proyecto actual en nuestra sesión, por favor actualiza la cotización (/quote) a una duración de 8 meses, agrega 1 Ingeniero QA, Evaluación Continua & AgentOps al 100% y 1 Especialista AI Security, Guardrails & Risk al 50%. Además, guarda en tus notas de sesión que como estándar de nuestro comité ARB de Arquitectura Empresarial todos los proyectos que crucen más de dos dominios deben incluir observabilidad OpenTelemetry y evaluación en Vertex Gen AI Evaluation."
+  }
+]
